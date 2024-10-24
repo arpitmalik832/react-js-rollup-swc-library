@@ -1,0 +1,337 @@
+{
+  "files": [
+    {
+      "fileName": "esm/index.js",
+      "size": 2659,
+      "gzippedSize": 912,
+      "brotliSize": 775,
+      "contentType": "chunk",
+      "percentageBySize": "4.53"
+    },
+    {
+      "fileName": "esm/components/atoms/Button/index.js",
+      "size": 709,
+      "gzippedSize": 397,
+      "brotliSize": 304,
+      "contentType": "chunk",
+      "percentageBySize": "1.21"
+    },
+    {
+      "fileName": "esm/components/atoms/ComponentWithSuspense/index.js",
+      "size": 818,
+      "gzippedSize": 407,
+      "brotliSize": 310,
+      "contentType": "chunk",
+      "percentageBySize": "1.39"
+    },
+    {
+      "fileName": "esm/components/atoms/HtmlContent/index.js",
+      "size": 860,
+      "gzippedSize": 403,
+      "brotliSize": 314,
+      "contentType": "chunk",
+      "percentageBySize": "1.47"
+    },
+    {
+      "fileName": "esm/components/organisms/Loader/index.js",
+      "size": 466,
+      "gzippedSize": 283,
+      "brotliSize": 206,
+      "contentType": "chunk",
+      "percentageBySize": "0.79"
+    },
+    {
+      "fileName": "esm/enums/app.js",
+      "size": 338,
+      "gzippedSize": 259,
+      "brotliSize": 206,
+      "contentType": "chunk",
+      "percentageBySize": "0.58"
+    },
+    {
+      "fileName": "esm/enums/sw.js",
+      "size": 469,
+      "gzippedSize": 332,
+      "brotliSize": 244,
+      "contentType": "chunk",
+      "percentageBySize": "0.80"
+    },
+    {
+      "fileName": "esm/hooks/useApiRequest.js",
+      "size": 5399,
+      "gzippedSize": 1044,
+      "brotliSize": 859,
+      "contentType": "chunk",
+      "percentageBySize": "9.20"
+    },
+    {
+      "fileName": "esm/hooks/useBackPress.js",
+      "size": 1909,
+      "gzippedSize": 735,
+      "brotliSize": 631,
+      "contentType": "chunk",
+      "percentageBySize": "3.25"
+    },
+    {
+      "fileName": "esm/hooks/useInitAxios.js",
+      "size": 1330,
+      "gzippedSize": 541,
+      "brotliSize": 472,
+      "contentType": "chunk",
+      "percentageBySize": "2.27"
+    },
+    {
+      "fileName": "esm/hooks/useTheme.js",
+      "size": 1132,
+      "gzippedSize": 504,
+      "brotliSize": 419,
+      "contentType": "chunk",
+      "percentageBySize": "1.93"
+    },
+    {
+      "fileName": "esm/providers/ReduxProvider.js",
+      "size": 700,
+      "gzippedSize": 366,
+      "brotliSize": 293,
+      "contentType": "chunk",
+      "percentageBySize": "1.19"
+    },
+    {
+      "fileName": "esm/redux/queries/index.js",
+      "size": 179,
+      "gzippedSize": 144,
+      "brotliSize": 111,
+      "contentType": "chunk",
+      "percentageBySize": "0.30"
+    },
+    {
+      "fileName": "esm/redux/slices/index.js",
+      "size": 329,
+      "gzippedSize": 200,
+      "brotliSize": 170,
+      "contentType": "chunk",
+      "percentageBySize": "0.56"
+    },
+    {
+      "fileName": "esm/services/SWRegistration.js",
+      "size": 3609,
+      "gzippedSize": 1275,
+      "brotliSize": 1029,
+      "contentType": "chunk",
+      "percentageBySize": "6.15"
+    },
+    {
+      "fileName": "esm/utils/classNames.js",
+      "size": 1125,
+      "gzippedSize": 531,
+      "brotliSize": 441,
+      "contentType": "chunk",
+      "percentageBySize": "1.92"
+    },
+    {
+      "fileName": "esm/utils/reportWebVitals.js",
+      "size": 371,
+      "gzippedSize": 236,
+      "brotliSize": 204,
+      "contentType": "chunk",
+      "percentageBySize": "0.63"
+    },
+    {
+      "fileName": "esm/utils/apiUtils.js",
+      "size": 2415,
+      "gzippedSize": 726,
+      "brotliSize": 617,
+      "contentType": "chunk",
+      "percentageBySize": "4.11"
+    },
+    {
+      "fileName": "esm/utils/arrayUtils.js",
+      "size": 492,
+      "gzippedSize": 291,
+      "brotliSize": 223,
+      "contentType": "chunk",
+      "percentageBySize": "0.84"
+    },
+    {
+      "fileName": "esm/utils/commonUtils.js",
+      "size": 4616,
+      "gzippedSize": 1764,
+      "brotliSize": 1453,
+      "contentType": "chunk",
+      "percentageBySize": "7.86"
+    },
+    {
+      "fileName": "esm/utils/converters.js",
+      "size": 3049,
+      "gzippedSize": 1103,
+      "brotliSize": 965,
+      "contentType": "chunk",
+      "percentageBySize": "5.19"
+    },
+    {
+      "fileName": "esm/utils/cookieUtils.js",
+      "size": 1792,
+      "gzippedSize": 675,
+      "brotliSize": 567,
+      "contentType": "chunk",
+      "percentageBySize": "3.05"
+    },
+    {
+      "fileName": "esm/utils/deviceUtils.js",
+      "size": 1394,
+      "gzippedSize": 555,
+      "brotliSize": 453,
+      "contentType": "chunk",
+      "percentageBySize": "2.37"
+    },
+    {
+      "fileName": "esm/utils/eventListeners/beforeUnload.js",
+      "size": 479,
+      "gzippedSize": 268,
+      "brotliSize": 201,
+      "contentType": "chunk",
+      "percentageBySize": "0.82"
+    },
+    {
+      "fileName": "esm/utils/eventListeners/load.js",
+      "size": 438,
+      "gzippedSize": 256,
+      "brotliSize": 195,
+      "contentType": "chunk",
+      "percentageBySize": "0.75"
+    },
+    {
+      "fileName": "esm/utils/eventListeners/preferredColorScheme.js",
+      "size": 639,
+      "gzippedSize": 313,
+      "brotliSize": 268,
+      "contentType": "chunk",
+      "percentageBySize": "1.09"
+    },
+    {
+      "fileName": "esm/utils/logsUtils.js",
+      "size": 2347,
+      "gzippedSize": 508,
+      "brotliSize": 457,
+      "contentType": "chunk",
+      "percentageBySize": "4.00"
+    },
+    {
+      "fileName": "esm/utils/objectUtils.js",
+      "size": 1376,
+      "gzippedSize": 614,
+      "brotliSize": 532,
+      "contentType": "chunk",
+      "percentageBySize": "2.34"
+    },
+    {
+      "fileName": "esm/utils/queryUtils.js",
+      "size": 1412,
+      "gzippedSize": 594,
+      "brotliSize": 499,
+      "contentType": "chunk",
+      "percentageBySize": "2.41"
+    },
+    {
+      "fileName": "esm/utils/reactUtils.js",
+      "size": 1476,
+      "gzippedSize": 535,
+      "brotliSize": 437,
+      "contentType": "chunk",
+      "percentageBySize": "2.51"
+    },
+    {
+      "fileName": "esm/utils/stringUtils.js",
+      "size": 2184,
+      "gzippedSize": 880,
+      "brotliSize": 736,
+      "contentType": "chunk",
+      "percentageBySize": "3.72"
+    },
+    {
+      "fileName": "esm/redux/slices/navigationSlice.js",
+      "size": 676,
+      "gzippedSize": 294,
+      "brotliSize": 286,
+      "contentType": "chunk",
+      "percentageBySize": "1.15"
+    },
+    {
+      "fileName": "esm/redux/slices/apisSlice.js",
+      "size": 1092,
+      "gzippedSize": 369,
+      "brotliSize": 323,
+      "contentType": "chunk",
+      "percentageBySize": "1.86"
+    },
+    {
+      "fileName": "esm/redux/slices/appSlice.js",
+      "size": 756,
+      "gzippedSize": 324,
+      "brotliSize": 286,
+      "contentType": "chunk",
+      "percentageBySize": "1.29"
+    },
+    {
+      "fileName": "esm/redux/queries/baseQuery.js",
+      "size": 487,
+      "gzippedSize": 265,
+      "brotliSize": 233,
+      "contentType": "chunk",
+      "percentageBySize": "0.83"
+    },
+    {
+      "fileName": "esm/redux/queries/sampleQuery.js",
+      "size": 993,
+      "gzippedSize": 352,
+      "brotliSize": 310,
+      "contentType": "chunk",
+      "percentageBySize": "1.69"
+    },
+    {
+      "fileName": "esm/assets/icons/lg32/standardAccount.svg.js",
+      "size": 2035,
+      "gzippedSize": 844,
+      "brotliSize": 712,
+      "contentType": "chunk",
+      "percentageBySize": "3.47"
+    },
+    {
+      "fileName": "esm/assets/images/forwardGrey.png.js",
+      "size": 576,
+      "gzippedSize": 479,
+      "brotliSize": 455,
+      "contentType": "chunk",
+      "percentageBySize": "0.98"
+    },
+    {
+      "fileName": "esm/components/atoms/Button/index.scss.js",
+      "size": 107,
+      "gzippedSize": 120,
+      "brotliSize": 107,
+      "contentType": "chunk",
+      "percentageBySize": "0.18"
+    },
+    {
+      "fileName": "index.css",
+      "size": 5464,
+      "gzippedSize": 1811,
+      "brotliSize": 1489,
+      "contentType": "asset",
+      "percentageBySize": "9.31"
+    }
+  ],
+  "totalSize": 58697,
+  "totalGzippedSize": 22509,
+  "totalBrotliSize": 18792,
+  "buildDuration": 874,
+  "noOfFiles": 40,
+  "largestFile": {
+    "fileName": "index.css",
+    "size": 5464,
+    "gzippedSize": 1811,
+    "brotliSize": 1489,
+    "contentType": "asset",
+    "percentageBySize": "9.31"
+  }
+}
