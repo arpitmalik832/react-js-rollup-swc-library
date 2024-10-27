@@ -18,8 +18,9 @@
     "dist",
     "types"
   ],
-  "module": "dist/index.js",
-  "types": "types/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "types/esm/index.d.ts",
   "exports": {
     "./icons/*": {
       "types": {
@@ -99,10 +100,10 @@
     "knip:w/o-devDependencies": "yarn knip --exclude devDependencies",
     "knip:prod": "yarn knip --production",
     "knip:prod:check-files": "yarn knip:prod --include files",
-    "storybook": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging storybook dev -p 6006",
-    "storybook:visualizer": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging INCLUDE_VISUALIZER=true storybook dev -p 6006",
-    "storybook:buildStats": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging INCLUDE_BUILD_STATS=true storybook dev -p 6006",
-    "storybook:visualizer:buildStats": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging INCLUDE_VISUALIZER=true INCLUDE_BUILD_STATS=true storybook dev -p 6006",
+    "storybook": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=development storybook dev -p 6006",
+    "storybook:visualizer": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=development INCLUDE_VISUALIZER=true storybook dev -p 6006",
+    "storybook:buildStats": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=development INCLUDE_BUILD_STATS=true storybook dev -p 6006",
+    "storybook:visualizer:buildStats": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=development INCLUDE_VISUALIZER=true INCLUDE_BUILD_STATS=true storybook dev -p 6006",
     "storybook:build": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging storybook build",
     "storybook:build:visualizer": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging INCLUDE_VISUALIZER=true storybook build",
     "storybook:build:buildStats": "yarn build-common && cross-env APP_ENV=staging LIB_ENV=staging STORY_ENV=staging INCLUDE_BUILD_STATS=true storybook build",
@@ -176,7 +177,7 @@
     "eslint-plugin-css-modules": "^2.12.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsdoc": "^50.4.3",
-    "eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.2",
