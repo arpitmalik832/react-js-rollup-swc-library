@@ -133,12 +133,12 @@ export default {
 
     // adding visualizer plugin
     if (addVisualizer) {
-      config.plugins.push(getBundleAnalyzerConfig('').plugins[0]);
+      config.plugins.push(getBundleAnalyzerConfig().plugins[0]);
     }
 
     // adding build stats plugin
     if (addBuildStats) {
-      config.plugins.push(getBuildStatsConfig('').plugins[0]);
+      config.plugins.push(getBuildStatsConfig().plugins[0]);
     }
 
     return config;
