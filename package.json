@@ -156,7 +156,7 @@
     "@storybook/react-webpack5": "^8.3.6",
     "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
-    "@swc/core": "^1.7.39",
+    "@swc/core": "^1.10.1",
     "@swc/jest": "^0.2.36",
     "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
