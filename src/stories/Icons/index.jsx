@@ -117,6 +117,7 @@ function Icons() {
           <div
             role="button"
             tabIndex={0}
+            aria-label="close icon"
             aria-pressed="false"
             className={s.backdrop}
             onClick={() => {
