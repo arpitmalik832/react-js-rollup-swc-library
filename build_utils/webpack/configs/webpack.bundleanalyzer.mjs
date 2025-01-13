@@ -7,12 +7,11 @@ import { resolve } from 'path';
 
 /**
  * Get the webpack configuration.
- * @param {string} type - The type of configuration.
  * @returns {object} The webpack configuration.
  * @example
- * const config = getConfig('main');
+ * const config = getConfig();
  */
-function getConfig(type) {
+function getConfig() {
   const timestamp = new Date().toISOString().replace(/:/g, '-');
   const path = `distInfo/storybook/${process.env.STORY_ENV}/visualizer/`;
 
