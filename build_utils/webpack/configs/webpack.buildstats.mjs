@@ -6,13 +6,12 @@ import { BuildStatsPlugin } from '../customPlugins/BuildStats.mjs';
 
 /**
  * Generates the Webpack configuration for build stats.
- * @param {string} type - The type of build (e.g., 'dll' or 'main').
  * @returns {object} The Webpack configuration object.
  * @example
- * const config = getConfig('main');
+ * const config = getConfig();
  * console.log(config);
  */
-function getConfig(type) {
+function getConfig() {
   const timestamp = new Date().toISOString().replace(/:/g, '-');
   const path = `distInfo/storybook/${process.env.STORY_ENV}/buildStats`;
 
