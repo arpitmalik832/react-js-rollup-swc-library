@@ -22,7 +22,6 @@ const config = {
         if_return: true,
         join_vars: true,
         side_effects: true,
-        warnings: false,
       },
       mangle: true,
     }),

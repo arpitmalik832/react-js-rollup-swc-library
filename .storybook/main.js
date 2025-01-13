@@ -19,7 +19,7 @@ export default {
     'storybook-addon-render-modes',
   ],
   framework: '@storybook/react-webpack5',
-  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async config => {
     if (!process.env.STORY_ENV) {
       throw new Error(ERR_NO_STORY_ENV_FLAG);
     }
@@ -69,6 +69,7 @@ export default {
     });
 
     // adding code splitting
+    // eslint-disable-next-line no-param-reassign
     config.optimization = {
       ...config.optimization,
       minimize: isRelease || isBeta,
@@ -133,12 +134,12 @@ export default {
 
     // adding visualizer plugin
     if (addVisualizer) {
-      config.plugins.push(getBundleAnalyzerConfig('').plugins[0]);
+      config.plugins.push(getBundleAnalyzerConfig().plugins[0]);
     }
 
     // adding build stats plugin
     if (addBuildStats) {
-      config.plugins.push(getBuildStatsConfig('').plugins[0]);
+      config.plugins.push(getBuildStatsConfig().plugins[0]);
     }
 
     return config;
