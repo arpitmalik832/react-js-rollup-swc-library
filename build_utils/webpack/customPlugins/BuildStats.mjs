@@ -36,23 +36,24 @@ class BuildStatsPlugin {
     compiler.hooks.emit.tapAsync(
       'BuildStatsPlugin',
       (compilation, callback) => {
-        for (const fileName in compilation.assets) {
-          if (!fileName.endsWith('.map') && !fileName.endsWith('.br')) {
+        Object.keys(compilation.assets)
+          .filter(
+            fileName => !fileName.endsWith('.map') && !fileName.endsWith('.br'),
+          )
+          .forEach(fileName => {
             const asset = compilation.assets[fileName];
             const size = asset.size();
             const gzippedSize = zlib.gzipSync(asset.source()).length;
             const brotliSize = zlib.brotliCompressSync(asset.source()).length;
 
             let contentType = 'asset';
-            for (const chunkGroup of compilation.chunkGroups) {
-              for (const chunk of chunkGroup.chunks) {
+            compilation.chunkGroups.forEach(chunkGroup => {
+              chunkGroup.chunks.forEach(chunk => {
                 if (chunk.files.has(fileName)) {
                   contentType = 'chunk';
-                  break;
                 }
-              }
-              if (contentType === 'chunk') break;
-            }
+              });
+            });
 
             this.stats.files.push({
               fileName,
@@ -65,8 +66,7 @@ class BuildStatsPlugin {
             this.stats.totalSize += size;
             this.stats.totalGzippedSize += gzippedSize;
             this.stats.totalBrotliSize += brotliSize;
-          }
-        }
+          });
 
         this.stats.noOfFiles = this.stats.files.length;
 
