@@ -16,9 +16,18 @@ import {
   copyToClipboard,
   isLocalhost,
 } from '../commonUtils';
-import { log } from '../logsUtils';
+
+jest.mock('../logsUtils', () => ({
+  log: jest.fn(),
+  errorLog: jest.fn(),
+}));
 
 describe('commonUtils unit tests', () => {
+  // Setup window.scrollTo mock
+  beforeAll(() => {
+    window.scrollTo = jest.fn();
+  });
+
   afterEach(() => {
     jest.resetModules();
     jest.resetAllMocks();
@@ -29,9 +38,7 @@ describe('commonUtils unit tests', () => {
   });
 
   it('testing triggerCallback', () => {
-    triggerCallback(x => {
-      log(x);
-    }, 'a');
+    triggerCallback(() => {}, 'a');
 
     triggerCallback();
   });
