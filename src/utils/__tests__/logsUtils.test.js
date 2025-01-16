@@ -13,6 +13,8 @@ import {
   traceLog,
   tableLog,
   infoLog,
+  timeLog,
+  timeEndLog,
 } from '../logsUtils';
 import { ENVS } from '../../enums/app';
 
@@ -28,6 +30,8 @@ describe('logUtils unit tests', () => {
     console.trace = jest.fn();
     console.table = jest.fn();
     console.info = jest.fn();
+    console.time = jest.fn();
+    console.timeEnd = jest.fn();
   });
 
   beforeEach(() => {
@@ -100,5 +104,23 @@ describe('logUtils unit tests', () => {
     process.env.APP_ENV = ENVS.PROD;
     infoLog('test');
     expect(console.info).toHaveBeenCalledTimes(1);
+  });
+
+  it('timeLog unit test', () => {
+    process.env.APP_ENV = ENVS.DEV;
+    timeLog('test');
+    expect(console.time).toHaveBeenCalledTimes(1);
+    process.env.APP_ENV = ENVS.PROD;
+    timeLog('test');
+    expect(console.time).toHaveBeenCalledTimes(1);
+  });
+
+  it('timeEndLog unit test', () => {
+    process.env.APP_ENV = ENVS.DEV;
+    timeEndLog('test');
+    expect(console.timeEnd).toHaveBeenCalledTimes(1);
+    process.env.APP_ENV = ENVS.PROD;
+    timeEndLog('test');
+    expect(console.timeEnd).toHaveBeenCalledTimes(1);
   });
 });
