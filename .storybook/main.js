@@ -1,3 +1,7 @@
+/**
+ * Storybook configuration.
+ * @file This file is saved as `.storybook/main.js`.
+ */
 import TerserPlugin from 'terser-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import CompressionPlugin from 'compression-webpack-plugin';
@@ -19,7 +23,7 @@ export default {
     'storybook-addon-render-modes',
   ],
   framework: '@storybook/react-webpack5',
-  webpackFinal: async config => {
+  webpackFinal: config => {
     if (!process.env.STORY_ENV) {
       throw new Error(ERR_NO_STORY_ENV_FLAG);
     }
