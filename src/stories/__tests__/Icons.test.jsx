@@ -24,6 +24,7 @@ jest.mock('../../utils/commonUtils', () => ({
 
 // Mock the logsUtils
 jest.mock('../../utils/logsUtils', () => ({
+  log: jest.fn(),
   errorLog: jest.fn(),
 }));
 

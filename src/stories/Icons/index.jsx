@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import iconsList from '../../../static/enums/icons_list.mjs';
 import { capitalizeFirstChar } from '../../utils/stringUtils';
 import { copyToClipboard } from '../../utils/commonUtils';
-import { errorLog } from '../../utils/logsUtils';
+import { errorLog, log } from '../../utils/logsUtils';
 
 import s from './index.module.scss';
 
@@ -163,11 +163,15 @@ function Icons() {
                 aria-pressed="false"
                 className={s.copyIcon}
                 onClick={() => {
-                  copyToClipboard(getImportPath());
+                  copyToClipboard(getImportPath(), () => {
+                    log('Copied!');
+                  });
                 }}
                 onKeyDown={e => {
                   if (e.key === 'Enter' || e.key === ' ') {
-                    copyToClipboard(getImportPath());
+                    copyToClipboard(getImportPath(), () => {
+                      log('Copied!');
+                    });
                   }
                 }}
               >

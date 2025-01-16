@@ -16,6 +16,7 @@ import {
   copyToClipboard,
   isLocalhost,
 } from '../commonUtils';
+import { log } from '../logsUtils';
 
 jest.mock('../logsUtils', () => ({
   log: jest.fn(),
@@ -64,13 +65,17 @@ describe('commonUtils unit tests', () => {
   });
 
   it('testing copyToClipboard', () => {
-    copyToClipboard('test');
+    copyToClipboard('test', () => {
+      log('Copied!');
+    });
   });
 
   it('testing copyToClipboard when it fails', () => {
     delete window.navigator;
 
-    copyToClipboard('test');
+    copyToClipboard('test', () => {
+      log('Copied!');
+    });
   });
 
   it('testing downloadFileFromData', () => {
