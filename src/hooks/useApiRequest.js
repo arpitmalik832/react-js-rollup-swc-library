@@ -126,9 +126,9 @@ function useApiRequest() {
    * cancelRequest('requestKey');
    */
   function cancelRequest(key) {
-    if (abortControllers[JSON.stringify(key)]) {
-      abortControllers[JSON.stringify(key)].abort();
-      delete abortControllers[JSON.stringify(key)];
+    if (abortControllers[key]) {
+      abortControllers[key].abort();
+      delete abortControllers[key];
     }
   }
 
