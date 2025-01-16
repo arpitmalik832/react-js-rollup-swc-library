@@ -13,14 +13,13 @@ const appSlice = createSlice({
   },
   reducers: {
     updateStore: (state, action) => {
-      if (!action.payload || !action.payload.key || !action.payload.value) {
-        return state;
+      if (action?.payload?.key && action?.payload?.value) {
+        return {
+          ...state,
+          [action.payload.key]: action.payload.value,
+        };
       }
-
-      return {
-        ...state,
-        [action.payload.key]: action.payload.value,
-      };
+      return state;
     },
     setDarkTheme: state => ({
       ...state,
