@@ -2,7 +2,7 @@
  * The ComponentWithSuspense component wraps a given component in a Suspense boundary.
  * @file The file is saved as `ComponentWithSuspense.jsx`.
  */
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 
 import Loader from '../../organisms/Loader';
 
