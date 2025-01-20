@@ -172,7 +172,7 @@
     "@svgr/webpack": "^8.1.0",
     "@swc/core": "^1.7.39",
     "@testing-library/jest-dom": "^6.6.2",
-    "@testing-library/react": "^16.0.1",
+    "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
     "autoprefixer": "^10.4.20",
     "babel-jest": "^29.7.0",
